@@ -147,5 +147,5 @@ async def echo(text):
     return 'Hello World'+text
 
 @app.get("/kok")
-async def kok():
+async def kok(p):
     return 'Hello World'
