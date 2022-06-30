@@ -146,6 +146,6 @@ if __name__ == '__main__':
 async def echo(text):
     return 'Hello World'+text
 
-@app.get("/echo")
+@app.get("/kok")
 async def kok():
     return 'Hello World'
