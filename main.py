@@ -1,6 +1,7 @@
 #Author: Chatchawal Sangkeettrakarn
 #Date: September 20,2020.
-
+from pandas.core.frame import DataFrame
+import pandas as pd
 from fastapi import FastAPI
 import uvicorn
 import numpy as np
@@ -148,4 +149,6 @@ async def echo(text):
 
 @app.get("/kok")
 async def kok(p):
-    return 'Hello World'
+    lre = [[1,5],[2,5],[3,5]]
+    tda = pd.DataFrame(lre)
+    return 'Hello World '+tda
